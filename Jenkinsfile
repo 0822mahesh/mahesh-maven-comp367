@@ -4,12 +4,8 @@ pipeline {
         stage('Build') {
             steps {
                 
-               
-               sh ''''
- set +e
- ..
- '''
-                sh 'mvn clean package'
+        
+                bash 'mvn clean package'
             }
         }
     }
