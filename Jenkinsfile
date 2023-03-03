@@ -3,10 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                 sh ''''
- set +e
- '''
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
     }
