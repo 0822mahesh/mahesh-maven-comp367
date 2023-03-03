@@ -8,7 +8,7 @@
   } else {
     greeting = "Good evening";
   }
-  String name = "Mahesh Kondragunta"; // Replace with the student's name
+  String name = "Mahesh Kondragunta1"; // Replace with the student's name
 %>
 <h1><%= greeting %>, <%= name %>, Welcome to COMP367!</h1>
 
