@@ -5,7 +5,10 @@ pipeline {
             steps {
                 
                 sh 'mvn clean package'
-                sh 'set +e'
+               sh ''''
+ set +e
+ ..
+ '''
             }
         }
     }
