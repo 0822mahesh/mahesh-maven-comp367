@@ -7,7 +7,7 @@ pipeline {
                
                sh ''''
  set +e
- 
+ ..
  '''
                 sh 'mvn clean package'
             }
