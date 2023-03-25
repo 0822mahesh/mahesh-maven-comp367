@@ -17,20 +17,6 @@ pipeline {
                 }
             }
         }
-        stage('Deploy Docker Image') {
-            steps {
-                script {
-                    withCredentials([string(credentialsId: '0822mahesh', variable: 'dockerhub')]) {
-     sh 'docker login -u 0822mahesh -p ${dockerhub}'
-}
-                   
-                 sh 'docker push 0822mahesh/my-app-1.0'
-                }
-            }
-        }
-        
-     }
        
     }
 }
-
