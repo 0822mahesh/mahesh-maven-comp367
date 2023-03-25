@@ -10,6 +10,13 @@ pipeline {
             
             
         }
+        stage('Build Docker Image') {
+            steps {
+                script {
+                  sh 'docker build -t 0822mahesh/my-app-1.0 .'
+                }
+            }
+        }
        
     }
 }
