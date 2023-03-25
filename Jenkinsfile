@@ -2,6 +2,17 @@ pipeline {
     agent any
     
     stages {
+        stage('check out'){
+        steps {
+                stage('check out'){
+                      steps{
+                          
+                          git brach: 'main', url:'https://github.com/0822mahesh/mahesh-maven-comp367'
+                      }
+                      
+                      }
+            
+        }
         stage('Build') {
             steps {
                 sh 'mvn clean package'
